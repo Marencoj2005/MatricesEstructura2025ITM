@@ -4,12 +4,19 @@
 
 public class Punto1Matrices {
 
-        public static void main (String[] args) {
-            metodos m = new metodos();
-            int d = m.solicitarDimension();
+    public static void main (String[] args) {
+        metodosPunto1 Metodos = new metodosPunto1(); // Crear objeto de la Clase Métodos
 
+        int[][] matriz = Metodos.solicitarDimension(); //Llamar al Método solocitar dimensión y almacenar el resultado
 
-        }
+        Metodos.llenarMatriz(matriz); //llamar al método llenar Matriz recién creada
+
+        Metodos.MostrarMatriz(matriz); //Llamar al Método Mostrar Matriz para Imprimir Matriz
+
+        Metodos.sumarFilas(matriz); // Llamar al Método Sumar Filas
+        
+        Metodos.sumarColumna(matriz); // Llamar al Método sumar Matriz
+    }
 
     
 }
